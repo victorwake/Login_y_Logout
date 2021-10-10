@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes X 2021</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/estilo.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-icons.css">
+
+    
+</head>
+ <body>
+    <header>
+    <div class="holder" style="position: static;">
+            <img src="images/logo.png" width="100" alt="Transporte X">
+           <h1>Transportes X 2021</h1>
+        </div>
+    </header>
+
+    <nav>
+      <ul class="holder">
+        <li><a href="/" class="{{#if isHome}}activo{{/if}}">Home</a></li>
+        <li><a href="/nosotros" class="{{#if isNosotros}}activo{{/if}}">Nosotros</a></li>
+        <li><a href="/servicios" class="{{#if isServicios}}activo{{/if}}">Servicios</a></li>
+        <li><a href="/galeria" class="{{#if isGaleria}}activo{{/if}}">Galeria</a></li>
+        <li><a href="/novedades" class="{{#if isNovedades}}activo{{/if}}">Novedades</a></li>
+        <li><a href="/contacto" class="{{#if isContacto}}activo{{/if}}">Contacto</a></li>
+    </ul>
+    </nav>
+    <main class="holder"></main>
+    {{{body}}}
+    <footer>
+    <div class="container__footer">
+        <div class="box__copyright">
+            <hr>
+             <p>Diseñado por: Victor Pinto - &copy;2021</p>
+        </div><script  src="javascripts/galeria.js"></script>
+        <script  src="/public/javascripts/app.js"></script>
+    </footer>
+  </body>  
+</html>

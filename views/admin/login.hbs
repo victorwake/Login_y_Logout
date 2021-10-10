@@ -1,0 +1,33 @@
+<div class="login">
+  <h1>Login</h1>
+  <form action="/admin/login" method="post">
+    <input
+      type="text"
+      class="form-control"
+      id="inputUser"
+      placeholder="Usuario"
+      name="usuario"
+      required="required"
+    />
+    <input
+      type="password"
+      class="form-control"
+      id="inputPassword"
+      placeholder="Cotraseña"
+      name="password"
+      required="required"
+    />
+    <button
+      type="submit"
+      class="btn btn-primary btn-block btn-large"
+    >Ingresar</button>
+  </form>
+</div>
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br />
+{{#if error}}
+<center><p>El usauario o contraseña es incorrecto</p></center>
+{{/if}}
+<br /><br /><br />
